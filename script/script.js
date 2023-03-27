@@ -39,7 +39,8 @@ buttonRef.addEventListener("click", changeText);
 
 //---------------------------------------
 
-function updateImage() {
+function updateImage(event) {
+    console.log(event)
     const image = document.querySelector("#shoppingCart");
     image.setAttribute(
       "src",
@@ -50,3 +51,22 @@ function updateImage() {
     image.setAttribute("height", 50);
   }
   buttonRef.addEventListener("click", updateImage);
+
+  //-------------------
+  const buttonContainer = document.querySelector(".button-container");
+  function BGcolor(event){
+    console.log("Button clicked",event.target.tagName)
+    if(event.target.tagName === 'BUTTON' &&  event.target.style.backgroundColor === 'buttonContainer.textContent' 
+    ){
+      event.target.classList.add('greenBG')
+      event.target.classList.add('yellowBG')
+      event.target.classList.add('redBG')
+      event.target.classList.add('BlueBG')
+    }
+
+    // document.body.style.background = 'pink'
+    // document.body.classList.toggle("pinkBG")
+}
+buttonContainer.addEventListener("click", BGcolor);
+buttonContainer.addEventListener("mouseover", BGcolor);
+// buttonContainer.addEventListener("click", BGcolor);
