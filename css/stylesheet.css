@@ -7,12 +7,12 @@ div{
 .greenBG{
     background-color: green;
 }
-.redBG{
-    background-color: red;
+.red{
+    color: red;
 }
-.yellowBG{
-    background-color: yellow;
+.yellow{
+    color: yellow;
 }
-.blueBG{
-    background-color: blue;
+.blue{
+    color: blue;
 }
